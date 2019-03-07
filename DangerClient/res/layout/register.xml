@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:theme="@android:style/Theme.NoTitleBar" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="128dip"
+            android:layout_height="128dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dip"
+            android:background="@drawable/alert"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/register_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dip"
+        android:gravity="center" >
+
+        <FrameLayout
+            android:id="@+id/phone_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="180dip"
+            android:background="#FFFFFF"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/number1"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dip"
+                android:background="@null"
+                android:ems="10"
+                android:hint="手机号"
+                android:inputType="number"
+                android:maxLength="11"
+                android:paddingLeft="50dip"
+                android:paddingRight="50dip"
+                android:textColor="@android:color/black" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/password1_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_below="@id/phone_layout"
+            android:layout_marginTop="10dip"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/password1"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dip"
+                android:background="@null"
+                android:ems="10"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="50dip"
+                android:paddingRight="50dip"
+                android:textColor="@android:color/black" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/password2_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_below="@id/password1_layout"
+            android:layout_marginTop="10dip"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/pwdconfirm"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dip"
+                android:background="@null"
+                android:ems="10"
+                android:hint="确认密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="50dip"
+                android:paddingRight="50dip"
+                android:textColor="@android:color/black" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/type_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_below="@id/password2_layout"
+            android:layout_marginTop="10dip"
+            android:gravity="center" >
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radio_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+					android:layout_marginLeft="75dip" 
+                    android:text="  家长"
+                    android:textColor="@android:color/black" />
+				</RadioGroup>
+            
+                <RadioButton
+                    android:id="@+id/radio_child"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+					android:layout_marginLeft="180dip" 
+                    android:text="  孩子"
+                    android:textColor="@android:color/black" />
+                
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/register1"
+            android:layout_width="250dip"
+            android:layout_height="40dip"
+            android:layout_below="@+id/type_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip"
+            android:background="#4876FF"
+            android:text="注  册"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

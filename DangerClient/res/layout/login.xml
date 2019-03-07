@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:theme="@android:style/Theme.NoTitleBar" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+       
+       <ImageView 
+            android:layout_width="128dip"
+            android:layout_height="128dip"
+            android:layout_marginTop="16dip"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/alert"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dip"
+        android:gravity="center" >
+
+        <FrameLayout
+            android:id="@+id/studendid_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="180dip"
+			android:background="#FFFFFF"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dip"
+                android:background="@null"
+                android:ems="10"
+                android:hint="手机号"
+                android:inputType="number"
+                android:maxLength="11"
+                android:paddingLeft="50dip"
+                android:paddingRight="50dip"
+                android:textColor="@android:color/black" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/password_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_below="@id/studendid_layout"
+            android:layout_marginTop="10dip"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dip"
+                android:background="@null"
+                android:ems="10"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="50dip"
+                android:paddingRight="50dip"
+                android:textColor="@android:color/black" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/remember_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_below="@id/password_layout"
+            android:layout_marginTop="10dip"
+            android:gravity="center" >
+
+            <CheckBox
+                android:id="@+id/remember_pass"
+           	    android:layout_width="35dip"
+            	android:layout_height="30dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50dip" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:ems="10"
+                android:paddingLeft="95dip"
+                android:paddingRight="60dip"
+                android:paddingTop="15dip"
+                android:text="记住密码"
+ 				android:textSize="18sp"
+ 				android:textColor="@android:color/black"  
+                />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="250dip"
+            android:layout_height="40dip"
+            
+            android:layout_below="@+id/remember_layout"
+            android:layout_marginTop="20dip"
+            android:layout_centerHorizontal="true"
+            android:background="#4876FF"
+            android:text="登  录"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="250dip"
+            android:layout_height="40dip"
+            android:gravity="center"
+            android:layout_below="@+id/login"
+            android:layout_centerHorizontal="true"
+            android:background="#FFFFFF"
+            android:layout_marginTop="5dip"
+            android:text="注  册"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"  />
+
+    </RelativeLayout>
+  
+</RelativeLayout>
